@@ -78,17 +78,16 @@ header > .header_wrap > .logo > h1 {
     overflow: hidden;
 } */
 
-/* header > .header_wrap > .logo {
+header > .header_wrap > .logo {
     float: left;
     text-indent: -99999px;
-    �뚯냼梨낅갑 濡쒓퀬 �ㅼ뼱媛덈븣 �섏젙�섍린
-} */
+} 
 
 .header_wrap > .logo > a{
-    /* background: url(../images/logo.png) no-repeat 50%; */
+    background: url(../images/soso_logo.png) no-repeat 50%;
     background-size: cover;
     display: block;
-    width: 86px;
+    width: 170px;
     height: 36px;
     overflow: visible;
 }
@@ -383,12 +382,11 @@ li{
 
 .sub_login{
     text-align: center;
-    height: 206px;
     padding-top: 70px;
     text-transform: uppercase;
 }
 
-.tit{
+.sub_login .tit{
     font-size: 18px;
     letter-spacing: 14px;
     font-family: Lato-Bold;
@@ -421,7 +419,7 @@ form{
 
 .login_view{
     padding-top: 100px;
-    width: 300px;
+    width: 400px;
     height: 700px;
     float: right;
     margin-right: 80px;
@@ -434,17 +432,17 @@ form{
 .input_box{
     margin-bottom: 50px;
     position: relative;
+    width: 100%;
 }
 
 .input_box .login_input {
     height: 46px;
-    width: 100%;
     margin-top: 13px;
 }
 
 input[type=date], input[type=email], input[type=number], input[type=password], input[type=tel], input[type=text] {
     font-size: 18px;
-    border-bottom: 1px solid #ddd;
+    width: 100%;
     color: #000;
     height: 45px;
 }
@@ -536,3 +534,156 @@ input{
     margin: 0 auto;
     margin-top: 10px;
 }
+
+.input_box .input {
+    height: 46px;
+    border-bottom: 1px solid #ddd;
+    margin-top: 13px;
+    margin: 0 auto;
+}
+
+.login_view{
+    overflow-y: scroll;
+}
+
+.login_wrap .input_box .tit {
+    font-size: 12px;
+}
+
+.login_wrap .input_box .country {
+    background: none;
+    border: none;
+    width: 100%;
+    padding-left: 0;
+    font-weight: 500;
+}
+
+select {
+    height: 38px;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    font-size: #bbb;
+    background: url(/web/images/arw_selectbox.png) no-repeat 100% 50%;
+    background-size: 30px 20px;
+    padding: 0 35px 0 10px;
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+.login_wrap .input_box .checked {
+    margin: 8px 0;
+    display: -moz-box;
+    display: flex;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+}
+
+
+element.style {
+    font-size: inherit;
+}
+.login_wrap .input_box .checked li.off {
+    color: #bbb;
+    background: url(../images/ico_checked_off.png) no-repeat 0 0;
+    background-size: 16px 12px;
+}
+
+.login_wrap .input_box .checked li {
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 18px;
+}
+
+.login_wrap .input_box .checked li.on {
+    color: #546de5;
+    background: url(/web/images/ico_checked_on.png) no-repeat 0 0;
+    background-size: 16px 12px;
+}
+
+.login_btns button.btn_sm {
+    height: 45px;
+}
+
+.login_btns button:first-child {
+    margin-left: 0;
+}
+
+.login_btns button {
+    height: 55px;
+    -moz-box-flex: 1;
+    flex: 1 1;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.btn_bk, .btn_bk_display {
+    color: #fff;
+    display: block;
+}
+
+.btn_bk {
+    background: #000;
+    border: 1px solid #000;
+}
+
+.btn_sm {
+    height: 44px;
+    font-size: 13px;
+    width: 210px;
+    display: block;
+}
+
+.btn_bk, .btn_lg, .btn_sm, .btn_wh {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-family: Abel,SpoqaHanSans;
+}
+
+.login_btns {
+    display: -moz-box;
+    display: flex;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.intro_img{
+    width: 100%;
+}
+
+.floating {
+    display: block;
+    position: fixed;
+    bottom: 16px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 100;
+    max-width: 450px;
+    width: 90%;
+    cursor: pointer;
+    margin: 0 auto;
+    background:rgba(172,153,193);
+    border-radius: 60px;
+    border: none;
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+    line-height: 24px;
+    font-size: 16px;
+    min-height: 56px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+
+
+
+
